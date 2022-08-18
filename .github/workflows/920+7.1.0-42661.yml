@@ -57,10 +57,10 @@ jobs:
           cp sample_user_config.json ${{matrix.platform}}_user_config.json
 
           # 调整VID和PID
-          sed -i -e 's/0x0001/0x05E3/g' -e 's/0x46f4/0x0723/g' ${{matrix.platform}}_user_config.json
+          sed -i -e 's/0x0001/x0723/g' -e 's/0x46f4/0x05E30/g' ${{matrix.platform}}_user_config.json
 
           # 调整SN和MAC,最好使用 actions secrets 引入,SN应该是固定值不应该每次生成
-          sn=`./redpill_tool_chain.sh sn ${{matrix.platform}} | grep 'Serial Number' | awk '{print $3}'`
+          # sn=`./redpill_tool_chain.sh sn ${{matrix.platform}} | grep 'Serial Number' | awk '{print $3}'`
           sed -i -e "s/1234XXX123/${sn:="1130ODN495425"}/g" -e 's/XXYYXXYYXXYY/001132324F0D/g' ${{matrix.platform}}_user_config.json
 
           # 添加第二张网卡mac并设置网卡数量
