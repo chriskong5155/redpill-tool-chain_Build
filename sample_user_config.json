@@ -11,8 +11,8 @@
     },
     "synoinfo": {
         "maxlanport":"2",
-        "esataportcfg":"0xffffc",
-        "internalportcfg":"0x3"
+        "esataportcfg":"0xffffe",
+        "internalportcfg":"0x1"
     },
     "ramdisk_copy": {},
     "extensions": []
