@@ -14,5 +14,5 @@
         "esataportcfg":"0xffffe",
         "internalportcfg":"0x1"
     },
-    "ramdisk_copy": {},
+    "ramdisk_copy": {}
 }
