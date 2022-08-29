@@ -15,5 +15,5 @@
         "internalportcfg":"0x1"
     },
     "ramdisk_copy": {},
-    "extensions": []
+    "extensions": {}
 }
