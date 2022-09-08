@@ -1,4 +1,4 @@
-name: 920+7.0.1-42218
+name: ds918p-7.0.1-42218
 
 on:
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
       matrix:
         include:
           #  两行一组，删除不需要的版本
-          - platform: ds920p
+          - platform: ds918p
             version: 7.0.1-42218
 
     steps:
